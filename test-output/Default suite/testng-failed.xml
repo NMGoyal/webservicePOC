@@ -5,8 +5,13 @@
     <classes>
       <class name="org.weatherapi.ApiTest">
         <methods>
+          <include name="addStation"/>
           <include name="setStation"/>
-          <include name="GetRequest" invocation-numbers="0 1"/>
+          <include name="getResult"/>
+          <include name="deleteStation"/>
+          <include name="getStation"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
         </methods>
       </class> <!-- org.weatherapi.ApiTest -->
     </classes>

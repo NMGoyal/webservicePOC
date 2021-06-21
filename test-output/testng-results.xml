@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-18T16:29:09 IST" name="Default suite" finished-at="2021-06-18T16:29:17 IST" duration-ms="7818">
+  <suite started-at="2021-06-21T13:26:37 IST" name="Suite" finished-at="2021-06-21T13:26:47 IST" duration-ms="9160">
     <groups>
     </groups>
-    <test started-at="2021-06-18T16:29:09 IST" name="Default test" finished-at="2021-06-18T16:29:17 IST" duration-ms="7818">
+    <test started-at="2021-06-21T13:26:37 IST" name="Test" finished-at="2021-06-21T13:26:47 IST" duration-ms="9160">
       <class name="org.weatherapi.ApiTest">
-        <test-method is-config="true" signature="setStation()[pri:0, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:09 IST" name="setStation" finished-at="2021-06-18T16:29:09 IST" duration-ms="589" status="PASS">
+        <test-method is-config="true" signature="startReport(java.lang.String, java.lang.String)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:37 IST" name="startReport" finished-at="2021-06-21T13:26:38 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setStation()[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:38 IST" name="setStation" finished-at="2021-06-21T13:26:38 IST" depends-on-methods="org.weatherapi.BasicExtentReport.startReport" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setStation -->
-        <test-method signature="addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:09 IST" name="addStation" data-provider="StationDetails" finished-at="2021-06-18T16:29:12 IST" duration-ms="2334" status="PASS">
+        <test-method signature="addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:38 IST" name="addStation" data-provider="StationDetails" finished-at="2021-06-21T13:26:41 IST" duration-ms="2744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +58,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStation -->
-        <test-method signature="addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:12 IST" name="addStation" data-provider="StationDetails" finished-at="2021-06-18T16:29:13 IST" duration-ms="959" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:41 IST" name="getResult" finished-at="2021-06-21T13:26:41 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addStation status=SUCCESS method=ApiTest.addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@260e86a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:41 IST" name="addStation" data-provider="StationDetails" finished-at="2021-06-21T13:26:42 IST" duration-ms="759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +100,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStation -->
-        <test-method signature="getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:13 IST" name="getStation" data-provider="StationDetails" finished-at="2021-06-18T16:29:13 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:42 IST" name="getResult" finished-at="2021-06-21T13:26:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addStation status=SUCCESS method=ApiTest.addStation(java.lang.String, java.lang.String, double, double, int)[pri:0, instance:org.weatherapi.ApiTest@260e86a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:42 IST" name="getStation" data-provider="StationDetails" finished-at="2021-06-21T13:26:43 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="671" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +142,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStation -->
-        <test-method signature="getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:13 IST" name="getStation" data-provider="StationDetails" finished-at="2021-06-18T16:29:14 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="588" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:43 IST" name="getResult" finished-at="2021-06-21T13:26:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getStation status=SUCCESS method=ApiTest.getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@260e86a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:43 IST" name="getStation" data-provider="StationDetails" finished-at="2021-06-21T13:26:43 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,11 +184,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStation -->
-        <test-method signature="deleteStation()[pri:2, instance:org.weatherapi.ApiTest@30bcf3c1]" started-at="2021-06-18T16:29:14 IST" name="deleteStation" finished-at="2021-06-18T16:29:17 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="2657" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:43 IST" name="getResult" finished-at="2021-06-21T13:26:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getStation status=SUCCESS method=ApiTest.getStation(java.lang.String, java.lang.String, double, double, int)[pri:1, instance:org.weatherapi.ApiTest@260e86a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="deleteStation()[pri:2, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:43 IST" name="deleteStation" finished-at="2021-06-21T13:26:46 IST" depends-on-methods="org.weatherapi.ApiTest.addStation" duration-ms="3104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteStation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:46 IST" name="getResult" finished-at="2021-06-21T13:26:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteStation status=SUCCESS method=ApiTest.deleteStation()[pri:2, instance:org.weatherapi.ApiTest@260e86a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.weatherapi.ApiTest@260e86a1]" started-at="2021-06-21T13:26:46 IST" name="tearDown" finished-at="2021-06-21T13:26:47 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- org.weatherapi.ApiTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
