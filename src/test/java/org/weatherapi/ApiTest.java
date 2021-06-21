@@ -19,7 +19,7 @@ import org.testng.asserts.SoftAssert;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class ApiTest {
+public class ApiTest extends BasicExtentReport {
 
 	public static final Logger logger = LogManager.getLogger(ApiTest.class);
 
@@ -51,6 +51,8 @@ public class ApiTest {
 	@Test(enabled = true, priority = 0, dataProvider = "StationDetails")
 	public void addStation(String external_id, String name, double latitude, double longitude, int altitude) {
 
+		test = extent.createTest("addStation");
+
 		logger.info("POST request created for external_id : " + external_id);
 
 		// Create a payload request
@@ -72,6 +74,8 @@ public class ApiTest {
 
 	@Test(enabled = true, priority = 1, dataProvider = "StationDetails", dependsOnMethods = { "addStation" })
 	public void getStation(String external_id, String name, double latitude, double longitude, int altitude) {
+
+		test = extent.createTest("getStation");
 
 		// GET tests
 		GetMethod getMethod = new GetMethod();
@@ -107,6 +111,8 @@ public class ApiTest {
 
 	@Test(enabled = true, priority = 2, dependsOnMethods = { "addStation" })
 	public void deleteStation() {
+
+		test = extent.createTest("deleteStation");
 
 		for (int i = 0; i < responseID.size(); i++) {
 
